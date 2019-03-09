@@ -57,6 +57,35 @@ public class Quiz {
 		
 		// Explore continue with labels
 		
+		System.out.println("===John and Jack Problem==");
+		
+		int N=11;
+		int john=1;
+		int jack=0;
+		int count = 0;
+		
+		for(john=1;john<=N;john++){
+			
+			count = count + john;
+			
+			if(count>=N){
+				System.out.println("** John Planted "+(count-N)+" Brick(s) Lastly out of "+john+" Brick(s) !!");
+				break;
+			}else{
+				System.out.println("** John Planted "+john+" Brick(s)");	
+			}
+			
+			jack = john*2;
+			count = count + jack;
+			
+			if(count>=N){
+				System.out.println(">> Jack Planted "+(count-N)+" Brick(s) Lastly out of "+jack+" Brick(s) !!");
+				System.out.println("== Total of "+N+" Bricks Wall Constructed ==");
+				break;
+			}else{
+				System.out.println(">> Jack Planted "+jack+" Brick(s)");
+			}
+		}
 
 	}
 
