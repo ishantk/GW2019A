@@ -22,6 +22,7 @@ class Child extends Parent{
 	
 	// Overriding : Customization -> Object to Object
 	public void purchaseBike(){
+		super.purchaseBike(); // super is a reference variable which points to Parent Object
 		System.out.println(">> Lets purchase Royal Enfield");
 	}
 	
